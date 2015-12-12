@@ -1,0 +1,45 @@
+# Section
+snippet =
+	= ${1:section_name} =
+
+# Set
+snippet @set
+	@set
+		${1:varName}			${2:value}
+
+# objects
+snippet @objects
+	@objects
+		${1:object}				${2:locator}
+
+snippet @obj
+	@objects
+		${1:object}				${2:locator}
+
+# groups
+snippet @groups
+	@groups
+		(${1:groups})			${2:objects}
+
+snippet @gr
+	@groups
+		(${1:groups})			${2:objects}
+
+# forEach
+snippet @forEach
+	@forEach [${1:objectPattern}] as ${2:item}
+		${$2}:
+			${3:specs}
+
+# forEach next
+snippet @fen
+	@forEach [${1:objectPattern}] as ${2:item}, next as ${3:nextItem}
+		${$2}:
+			${3:specs}
+
+# forEach prev
+snippet @fep
+	@forEach [${1:objectPattern}] as ${2:item}, prev as ${3:previousItem}
+		${$2}:
+			${3:specs}
+
