@@ -46,7 +46,7 @@ syntax region galenRuleParameter start="%{" end="}"
 
 highlight default link galenKeywords Operator
 highlight default link galenRuleParameter PreProc
-highlight default link galenSpec Type 
+highlight default link galenSpec Type
 highlight default link galenJs  PreProc
 highlight default link galenComment  Comment
 highlight default link galenRange Number
